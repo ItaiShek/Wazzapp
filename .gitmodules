@@ -1,0 +1,3 @@
+[submodule "src/Wazzapp/extern/stb"]
+	path = src/Wazzapp/extern/stb
+	url = https://github.com/nothings/stb.git
