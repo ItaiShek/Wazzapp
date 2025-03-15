@@ -26,9 +26,9 @@ This software fixes it.
 ## Installation
 
 ### Windows:
-[Installer](https://github.com/ItaiShek/Wazzapp/releases/latest/download/WazzappInstaller.msi) (The installer will add Wazzapp to the context menu)
+[Installer](https://github.com/ItaiShek/Wazzapp/releases/latest/download/WazzappInstaller.exe) (The installer will add Wazzapp to the context menu)
 
-[Portable](https://github.com/ItaiShek/Wazzapp/releases/latest/download/Win_Portable.zip)
+[Portable](https://github.com/ItaiShek/Wazzapp/releases/latest/download/Wazzapp.exe)
 
 
 ## Usage
@@ -46,10 +46,9 @@ Wazzapp directory
 ```
 
 ## Notes
-* The only difference between the executables is that one displays the messages via tkinter messagebox, while the other does so via the console.
-* The JPEG files are overwritten by the software with the fixed versions. It creates a backup in the same directory as the original image, using the extension '.bak', and deletes it once the new file is successfully saved.
+* The only difference between the executables is that one displays the messages via messagebox, while the other does so via the console.
 * The only affected files are JPEG/JPG images, other files/directories will be skipped.
-* The identification of the JPEG format relies on the `imhdr` library, which can sometimes [overlook JPEG formats](https://github.com/python/cpython/issues/60716). I didn't experience any issues with it on WhatsApp images. If you're facing false negatives with WhatsApp images, feel free to open an issue, and I'll look into changing it.
+* The identification of the JPEG format and conversion relies on the `stb` library. If you're facing false negatives with WhatsApp images, feel free to open an issue, and I'll look into changing it.
 
 ## Todo
 [ ] Create a macOS version.
